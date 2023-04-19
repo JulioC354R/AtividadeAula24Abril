@@ -2,19 +2,18 @@ import java.util.Scanner;
 
 public class questao5 {
     public static void main(String[] args) {
-        int numero;
-        int fatorial;
-        System.out.println("Digite o número");
+        int fatorial = 0;
+        int n;
+        int i;
+
         Scanner teclado = new Scanner(System.in);
-        numero = teclado.nextInt();
-        if (numero > 1){
-            for(i = numero; i>0; i--) {
-                System.out.println();
-            }
-        } else {
-            System.out.println(numero);
+        n = teclado.nextInt();
+        for (i = 1; i <= n; i = i + 1) {
+            fatorial = fatorial * i; // 100
+        }
+
+        System.out.println(fatorial); // 1
         }
 
     }
-}
 
